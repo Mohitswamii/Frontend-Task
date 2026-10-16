@@ -1,0 +1,198 @@
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Task 3A: Sidebar Layout */
+.page-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    background-color: #dbeafe;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #dc2626;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.main-content section,
+.blog-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #1e3a8a;
+}
+
+/* Task 3B: Product Card */
+/* Box Model: margin, padding, border */
+.product-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px #00000015;
+}
+
+.product-card img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.price {
+    color: #15803d;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+/* Task 3C: Three-Column Blog with Flexbox */
+.blog-section {
+    margin: 0 20px 20px;
+}
+
+.blog-container {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.blog-card {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #f9fafb;
+}
+
+.blog-card img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.blog-card a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Layout for Mobile */
+@media (max-width: 768px) {
+    .page-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
+
+    .blog-section {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 18px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .page-layout {
+        padding: 12px;
+    }
+
+    .main-content section,
+    .blog-section {
+        padding: 15px;
+    }
+}

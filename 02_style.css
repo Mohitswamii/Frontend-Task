@@ -1,0 +1,129 @@
+
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f4f8; /* HEX color */
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(35, 87, 137); /* RGB color */
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+main {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* ID Selector */
+#about {
+    border-left: 5px solid #2563eb;
+}
+
+#contact {
+    text-align: center;
+    background-color: #e0f2fe;
+}
+
+/* Class Selector */
+.description {
+    font-size: 17px;
+    color: rgb(70, 70, 70);
+}
+
+.hobbies {
+    border: 1px solid #cccccc;
+}
+
+h2 {
+    color: #235789;
+}
+
+/* Ordered List: Movies */
+.movie-list {
+    list-style-type: decimal;
+}
+
+.movie-list li {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #fff3cd;
+    border-radius: 5px;
+}
+
+/* Unordered List: Cities */
+.city-list {
+    list-style-type: square;
+}
+
+.city-list li {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #dbeafe;
+    border-radius: 5px;
+}
+
+/* Pseudo-class Selector */
+.movie-list li:hover {
+    background-color: #fbbf24;
+    cursor: pointer;
+}
+
+.city-list li:hover {
+    background-color: #93c5fd;
+    cursor: pointer;
+}
+
+button {
+    background-color: #235789;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover pseudo-class */
+button:hover {
+    background-color: #142f4c;
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+}

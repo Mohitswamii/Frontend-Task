@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Layouts</title>
+    <link rel="stylesheet" href="03_task.css">
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Web Design</h1>
+        <p>Sidebar, Product Card and Blog Layout</p>
+    </header>
+
+    <!-- Task 3A: Sidebar Layout -->
+    <div class="page-layout">
+
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content" id="home">
+            <section>
+                <h2>Welcome</h2>
+                <p>
+                    This page demonstrates responsive web layouts
+                    using HTML5, CSS Flexbox, and media queries.
+                </p>
+            </section>
+
+            <!-- Task 3B: Product Card and Box Model -->
+            <section id="product">
+                <h2>Featured Product</h2>
+
+                <div class="product-card">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrFjScOpdtfcA565c8wvrHMlGt6cIQ_BUeqzmymkVJA&s=10"
+                        alt="Wireless headphones"
+                    >
+
+                    <div class="product-info">
+                        <h3>Wireless Headphones</h3>
+                        <p>
+                            Enjoy high-quality sound with comfortable
+                            wireless headphones.
+                        </p>
+                        <p class="price">₹1,499</p>
+                        <button type="button">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <!-- Task 3C: Three-Column Blog Layout -->
+    <section class="blog-section" id="blog">
+        <h2>Latest Blog Posts</h2>
+
+        <div class="blog-container">
+
+            <article class="blog-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLPn64nUP0pEmA5ozaBuXkj9iW5XU8Pcxkq2AotO3ursJyaHCja-MQXBDd&s=10"
+                    alt="HTML illustration"
+                >
+                <h3>Learn HTML</h3>
+                <p>
+                    HTML provides the structure of a web page
+                    using elements and semantic tags.
+                </p>
+                <a href="#blog">Read More</a>
+            </article>
+
+            <article class="blog-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLdcXu-kCUhvg_1g79M0-i4Z-TyAh3LbBsFtdC-sldQADQQUGGy5lwFre3&s=10"
+                    alt="CSS illustration"
+                >
+                <h3>Learn CSS</h3>
+                <p>
+                    CSS helps style web pages with colors,
+                    layouts, spacing, and responsive designs.
+                </p>
+                <a href="#blog">Read More</a>
+            </article>
+
+            <article class="blog-card">
+                <img
+                    src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNcmz9Dourgqm8DYyiCQ-LaJUF8GI3NZ3j1Z2JvfBjnx0YlbHxQYvjuoGU&s=10"
+                    alt="JavaScript illustration"
+                >
+                <h3>Learn JavaScript</h3>
+                <p>
+                    JavaScript adds interactivity and dynamic
+                    behavior to websites.
+                </p>
+                <a href="#blog">Read More</a>
+            </article>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 Responsive Web Design. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

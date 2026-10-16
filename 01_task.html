@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio & Academic Timetable</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #1e3a8a;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #00000010;
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figure img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2563eb;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+        }
+
+        thead {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #eff6ff;
+        }
+
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 12px;
+            }
+
+            section {
+                padding: 16px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <p>Computer Science Student | Aspiring Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#timetable">Timetable</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <figure>
+                <img
+                    src="IMG20260302110942.jpg"
+                    alt="Profile placeholder"
+                >
+                <figcaption>My Profile - Computer Science Student</figcaption>
+            </figure>
+
+            <p>
+                Hello! I am a Computer Science Engineering student
+                interested in web development and programming.
+                I enjoy learning new technologies and building
+                user-friendly websites.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML5 and CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Java Programming</li>
+                <li>Git and GitHub</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <article>
+                <h3>Personal Portfolio Website</h3>
+                <p>A responsive website showcasing my skills and projects.</p>
+            </article>
+
+            <article>
+                <h3>Currency Converter</h3>
+                <p>A web application that converts currencies using an API.</p>
+            </article>
+
+            <article>
+                <h3>Stone Paper Scissors</h3>
+                <p>A simple interactive game developed using web technologies.</p>
+            </article>
+        </section>
+
+        <section id="timetable">
+            <h2>Academic Timetable</h2>
+            <p>Weekly class schedule for Computer Science Engineering.</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>9:00–10:00</th>
+                            <th>10:00–11:00</th>
+                            <th>11:00–12:00</th>
+                            <th>12:00–1:00</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Java</td>
+                            <td>DBMS</td>
+                            <td>Mathematics</td>
+                            <td>Web Design</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>DBMS</td>
+                            <td>Java</td>
+                            <td>Web Design</td>
+                            <td>English</td>
+                        </tr>
+
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Mathematics</td>
+                            <td>Web Design</td>
+                            <td>Java Lab</td>
+                            <td>Java Lab</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Java</td>
+                            <td>English</td>
+                            <td>DBMS</td>
+                            <td>Mathematics</td>
+                        </tr>
+
+                        <tr>
+                            <td>Friday</td>
+                            <td>Web Design</td>
+                            <td>DBMS</td>
+                            <td>Java</td>
+                            <td>Library</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: swamimohit7162@gmail.com</p>
+            <p>GitHub: github.com/Mohitswamii</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
